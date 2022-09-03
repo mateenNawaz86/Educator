@@ -1,10 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <link>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School Website</title>
+    <title>Eductor</title>
+
+    <!-- iconcount link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
-  <body></body>
+  <body>
+      <nav>
+        <div class="container nav__container">
+          <a href="index.html"> <h4>EDUCATOR</h4></a>
+          <ul class="nav__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+          <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+      </nav>
+      
+      <header>
+        <div class="container header__container">
+          <div class="header__left">
+            <h1>Let's join and get your skills to boots up!</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ipsum sunt neque placeat temporibus ab.</p>
+            <a href="course.html" class="btn btn-primary">Get started</a>
+          </div>
+          <div class="header__right">
+            <div class="header__right-img">
+              <img src="./assets/header_right__img1.png" alt="Teaching-img">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- categories section start -->
+      <section class="categories">
+        <div class="container categories__container">
+          <div class="categories__left">
+            <h1>Categories</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores delectus labore consectetur autem dicta ullam aspernatur nam mollitia inventore, fuga accusamus? Animi laborum id ipsum, inventore explicabo facere fugit.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="categories__right">
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
+                <h5>Business</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-palette"></i></span>
+                <h5>Graphic Design</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-music"></i></span>
+                <h5>Music</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+                <h5>Marketing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-gold"></i></span>
+                <h5>Finance</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+            <article class="category">
+                <span class="category__icon"><i class="uil uil-bitcoin-sign"></i></span>
+                <h5>Blockchain</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, non.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- categories section end -->
+
+      <!-- courses start -->
+      <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container course__container">
+          <article class="course">
+            <div class="course__img">
+              <img src="./assets/course-1.png" alt="SEO Solution">
+            </div>
+
+            <h4>SEO Solution Website </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi distinctio ipsum est, maxime autem?</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </article>
+          <article class="course">
+            <div class="course__img">
+              <img src="./assets/course-3.png" alt="Health care">
+            </div>
+
+            <h4>Family Health Care</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi distinctio ipsum est, maxime autem?</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </article>
+          <article class="course">
+            <div class="course__img">
+              <img src="./assets/course-2.png" alt="samrt watch">
+            </div>
+
+            <h4>Smart Watch Lifestyle</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sequi distinctio ipsum est, maxime autem?</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </article>
+          
+        </div>
+      </section>
+      <!-- courses end -->
+
+      <!-- Javascript linl -->
+        <script src="./script.js"></script>
+    </body>
 </html>
