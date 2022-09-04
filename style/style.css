@@ -238,3 +238,82 @@ header {
 .categories p {
   font-size: 0.85rem;
 }
+
+/* ========= course start ============*/
+.courses {
+  margin-top: 120px;
+}
+
+.course__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.course {
+  background-color: var(--color-bg1);
+  border: 1px solid transparent;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.course:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
+}
+
+.course__info {
+  padding: 2rem;
+}
+
+.course__info p {
+  margin: 1rem 0 1.8rem;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+/* ========= course end =============*/
+
+/* ========= FAQS start =============*/
+.faqs {
+  background-color: var(--color-bg1);
+  box-shadow: inset 0 0 2.5rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  gap: 1.2rem;
+  height: fit-content;
+  padding: 1.7rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.faqs__icon {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.answer__question h4 {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.faq p {
+  margin-top: 0.9rem;
+  display: none;
+}
+
+.faq.answer p {
+  display: block;
+}
+
+/* ========= FAQS end =============*/
