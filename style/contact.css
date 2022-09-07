@@ -1,0 +1,142 @@
+.contact_container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  margin: 6rem auto;
+  background-color: var(--color-bg1);
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.contact__aside {
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  padding: 3rem;
+  position: relative;
+  bottom: 10rem;
+}
+
+.aside__img {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.contact__aside p {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__details li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+.contact__socials a {
+  background-color: var(--color-bg2);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: var(--transitions);
+}
+
+.contact__socials a:hover {
+  background-color: transparent;
+}
+
+/* ===== FORM ====== */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form__name input[type="text"] {
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.contact__form .btn {
+  width: max-content;
+  margin-top: 1rem;
+}
+
+/* ====== RESPONSIVENESS ======*/
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact_container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+/* ===== FOR MOBILES ======*/
+@media screen and (max-width: 700px) {
+  .contact_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .contact__form {
+    margin: 0 1.5rem 3rem;
+  }
+
+  .form__name {
+    flex-direction: column;
+  }
+
+  .form__name input[type="text"] {
+    width: 100%;
+  }
+}
